@@ -37,6 +37,10 @@
     [_Cbrain updateCalculationStringFromButtonTag:(int)pressedButton.tag];
     [self updatecalculationView];
 }
+- (IBAction)customFuncPressed:(id)sender {
+    [_Cbrain customCalculationString];
+    [self updatecalculationView];
+}
 - (IBAction)clearPressed:(id)sender {
     [_Cbrain clearCalculationString];
     [self updatecalculationView];
